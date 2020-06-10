@@ -24,7 +24,8 @@ Content
     1. DAG
 7. Attribute Based Access Control
 8. user-agent
-9. restful
+9. RESTFul
+    1. [Pagination](./ch09-pagination.md)
 10. UI
 
 https://www.culttt.com/2014/06/18/whats-difference-active-record-data-mapper/
