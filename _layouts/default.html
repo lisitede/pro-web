@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+
+    {% if site.google_analytics %}
+      <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '{{ site.google_analytics }}');
+      </script>
+    {% endif %}
+    <meta charset="UTF-8">
+
+{% seo %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="/assets/css/default.css" />
+
+    <script>
+      var head = window.head || {};
+      head.ver = '{{ site.time | date: "%Y%m%d" }}-{{ site.github.build_revision | slice: 0, 8 }}';
+      window.head = head;
+    </script>
+  </head>
+  <body>
+    <header class="page-header" role="banner">
+      <h1 class="project-name"><a href="{{ page.url }}">{{ page.title | default: site.title | default: site.github.repository_name }}</a></h1>
+      <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      {{ content }}
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-7"></div>
+          <div class="col-sm-5">
+            <img src="https://via.placeholder.com/350x150" alt="gg-350x150">
+          </div>
+        </div>
+      </div>
+
+      <footer class="site-footer">
+        <a href="/">回到首页</a> |
+        <a href="/pro-web">Pro Web</a> |
+        <span class="site-footer-credits">Powered by <a href="https://github.com/pages-themes/cayman" target="_blank">Cayman</a></span>
+      </footer>
+    </main>
+
+    <script data-ad-client="ca-pub-6809418432821220" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  </body>
+</html>

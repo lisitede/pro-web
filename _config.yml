@@ -1,0 +1,7 @@
+theme: jekyll-theme-cayman
+exclude: ['apps']
+
+google_analytics: UA-7072136-12
+
+title: Pro Web / 理斯特的
+description: We do web right.
