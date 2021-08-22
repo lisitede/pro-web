@@ -1,0 +1,21 @@
+{
+  "name": "ch01",
+  "version": "0.0.1",
+  "description": "pro-web ch 01",
+  "private": true,
+  "dependencies": {
+    "egg": "2.1.0",
+    "egg-view-nunjucks": "2.0.0"
+  },
+  "devDependencies": {
+    "egg-bin": "3.1.0"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "scripts": {
+    "start": "egg-bin dev"
+  },
+  "author": "shuaizhexu@gmail.com",
+  "license": "MIT"
+}
